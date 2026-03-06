@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-store-y - ChoufStore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #ECF0F1;
+            color: #2C3E50;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2C3E50, #E67E22);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-icon {
+            font-size: 4em;
+            margin-bottom: 15px;
+        }
+        
+        .product-card h3 {
+            color: #2C3E50;
+            margin-bottom: 10px;
+        }
+        
+        .price {
+            font-size: 1.5em;
+            color: #E67E22;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .btn {
+            background-color: #2C3E50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #E67E22;
+        }
+        
+        .footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🇲🇦 Test-store-y</h1>
+        <p>Traditional Moroccan Products, Modern Quality</p>
+    </div>
+    
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="products-grid">
+            
+        <div class="product-card">
+            <div class="product-icon">⚡</div>
+            <h3>Smart Tagine</h3>
+            <p class="price">899 MAD</p>
+            <button class="btn">View Details</button>
+        </div>
+    
+        <div class="product-card">
+            <div class="product-icon">⚖️</div>
+            <h3>Digital Scale</h3>
+            <p class="price">299 MAD</p>
+            <button class="btn">View Details</button>
+        </div>
+    
+        <div class="product-card">
+            <div class="product-icon">✨</div>
+            <h3>Premium Set</h3>
+            <p class="price">1499 MAD</p>
+            <button class="btn">View Details</button>
+        </div>
+    
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2026 Test-store-y - A ChoufStore Creation</p>
+    </div>
+</body>
+</html>
